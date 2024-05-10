@@ -63,8 +63,8 @@
     {{- end }}
   </footer>
 
-  {{- if (.Param "comment") }}
-  {{ partial "comment.html" . }}
+  {{- if (.Param "comments") }}
+  {{ partial "comments.html" . }}
   {{- end }}
 </article>
 
