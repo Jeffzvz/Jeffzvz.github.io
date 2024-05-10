@@ -1,12 +1,14 @@
 baseURL: "https://Jeffzvz.github.io/"
 title: 🐶Jeff'Log
-#paginate: 5
+paginate: 5
 theme: PaperMod
+languageCode: zh
+defaultContentLanguage: zh
 
-# enableRobotsTXT: true
-# buildDrafts: false
-# buildFuture: false
-# buildExpired: false
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 
 minify:
   disableXML: true
@@ -14,15 +16,17 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Zhm's Blog
-  description: "description"
-  keywords: [Blog, Portfolio, PaperMod]
+  title: "Zhm's Blog"
+  description: "Zhm's Blog"
+  keywords: [Blog, Zhm, Jeffzvz]
   author: zhm
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "2006-01-02"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
+  busuanzi:
+    enable: true
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -49,10 +53,10 @@ params:
     # apple_touch_icon: "<link / abs url>"
     # safari_pinned_tab: "<link / abs url>"
 
-  # label:
-  #   text: "Home"
-  #   #icon: /apple-touch-icon.png
-  #   iconHeight: 35
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
 
   # profile-mode
   profileMode:
@@ -87,12 +91,12 @@ params:
       SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: false # hide everywhere but not in structured data
-    hiddenInList: false # hide on list pages and home
-    hiddenInSingle: false # hide on single page
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/jeffzvz.github.io/content"
+    URL: "https://github.com/jeffzvz.github.io/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -109,20 +113,20 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: Archives # 需做额外配置，具体参考下文
-      name: Archives
+    - identifier: archives 
+      name: 归档
       url: /archives/
       weight: 10
     - identifier: Categories
-      name: Categories
+      name: 类别
       url: /categories/
       weight: 10
     - identifier: Tags
-      name: Tags
+      name: 标签
       url: /tags/
       weight: 20
-    - identifier: Search # 需做额外配置，具体参考下文
-      name: Search
+    - identifier: Search 
+      name: 搜索
       url: /search/
       weight: 40
     - identifier: EmojiAll
@@ -146,6 +150,4 @@ outputs:
       - RSS
       - JSON # is necessary
 
-# params:  
-#     busuanzi:
-#         enable: true
+
