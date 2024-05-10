@@ -152,5 +152,5 @@ outputs:
 
 disqus:
   enable: true
-  shortname: disqus_J5zrvDk8Hx
+  shortname: https-jeffzvz-github-io
   count : true
