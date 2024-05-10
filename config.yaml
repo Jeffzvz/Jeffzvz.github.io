@@ -152,5 +152,5 @@ outputs:
 
 disqus:
   enable: true
-  shortname: JeffZhang
+  shortname: disqus_J5zrvDk8Hx
   count : true
