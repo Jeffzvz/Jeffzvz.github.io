@@ -63,8 +63,8 @@
     {{- end }}
   </footer>
 
-  {{- if (.Param "comments") }}
-  {{- partial "comments.html" . }}
+  {{- if (.Param "enableGitalk") }}
+  {{ partial "gitalk.html" . }}
   {{- end }}
 </article>
 

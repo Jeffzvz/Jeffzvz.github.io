@@ -21,17 +21,16 @@ params:
   keywords: [Blog, Zhm, Jeffzvz]
   author: zhm
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "2006-01-02"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
   busuanzi:
     enable: true
-
+  enableGitalk : true
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false # 共享button
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: true # home>posts 这种面包屑导航
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
@@ -43,6 +42,7 @@ params:
   hidemeta: false
   hideSummary: false
   tocopen: false
+
 
   # assets:
     # disableHLJS: true # to disable highlight.js
@@ -102,24 +102,20 @@ params:
 
   # for search
   # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
+  fuseOpts: # 模糊搜索
+    isCaseSensitive: false # 大小写
+    shouldSort: true # 匹配程度排序
+    location: 0 # 优先搜索位置
+    distance: 1000 # 最大搜索位置
+    threshold: 0.4 # 模糊程度，0表示完全匹配
+    minMatchCharLength: 0 # 最小匹配字符
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
+    keys: ["title", "permalink", "summary", "content"] ## 搜索的key
 menu:
   main:
     - identifier: archives 
       name: Archives
       url: /archives/
-      weight: 10
-    - identifier: Categories
-      name: Categories
-      url: /categories/
       weight: 10
     - identifier: Tags
       name: Tags
@@ -128,21 +124,25 @@ menu:
     - identifier: Search 
       name: Search
       url: /search/
-      weight: 40
+      weight: 30
     - identifier: EmojiAll
       name: Emoji
       url: https://www.emojiall.com/zh-hans
-      weight: 50
+      weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
     # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
+    codeFences: true
+    guessSyntax: true
     # lineNos: true
-    # style: monokai
+    style: monokai
+    tableOfContents:
+      startLevel: 1
+      endLevel: 6
+      ordered: true
 
 outputs:
     home:
@@ -150,4 +150,16 @@ outputs:
       - RSS
       - JSON # is necessary
 
+gitalk:
+  clientID : 90f10a28d46df3ea5b251c8423e655c26cebc066
+  clientSecret : "https://jeffzvz.github.io/"
+  repo : "jeffzvz.github.io" # 您的博客的github地址Repository name，例如：xxxx.github.io
+  owner : "Jeffzvz" # 您的GitHub ID
+  admin: "Jeffzvz" # 您的GitHub ID
+  id: "location.pathname" # 文章页面的链接地址就是ID
+  labels: "gitalk" # Github issue labels. If you used to use Gitment, you can change it
+  perPage: 5 # Pagination size, with maximum 100.
+  pagerDirection: "last" # Comment sorting direction, available values are 'last' and 'first'.
+  createIssueManually: true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
+  distractionFreeMode: true # Enable hot key (cmd|ctrl + enter) submit comment.
 

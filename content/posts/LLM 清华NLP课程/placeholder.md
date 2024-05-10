@@ -1,9 +1,7 @@
 ---
-title: "Reference of hugo"
-date: 2024-05-10T15:58:12+08:00
-# weight: 1
-# aliases: ["/first"]
-tags: ["Reference","Hugo"]
+title: "Placeholder"
+date: 2024-05-10T20:46:36+08:00
+tags: [""]
 author: "Jeff"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -12,11 +10,11 @@ draft: false
 hidemeta: false
 comments: false
 description: ""
-disableHLJS: true # to disable highlightjs
+canonicalURL: "https://canonical.url/to/page"
 disableShare: false
 disableHLJS: false
 hideSummary: false
-searchHidden: true
+searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
@@ -34,8 +32,23 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
+##  1 占位符
+### 1.1 aaa
 
+- 233
+  - 233
 
-# Record some reference:
-[1. 初始化和部署](https://www.elegantcrazy.com/posts/blog/build-blog-with-github-pages-hugo-and-papermod/) 
-[2. 官方初始化](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation#sample-pagemd)
+主任怎么不理我啊 阿巴阿巴~
+
+换行嘿嘿
+
+贴图
+
+![images](/images/Pasted_image_20240510205207.png)
+
+## 2 toc
+
+111
+```python
+print('bitch')
+```
