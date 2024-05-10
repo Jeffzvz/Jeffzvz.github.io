@@ -2,8 +2,8 @@ baseURL: "https://Jeffzvz.github.io/"
 title: 🐶Jeff'Log
 paginate: 5
 theme: PaperMod
-languageCode: zh
-defaultContentLanguage: zh
+# languageCode: zh
+# defaultContentLanguage: zh
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -114,19 +114,19 @@ params:
 menu:
   main:
     - identifier: archives 
-      name: 归档
+      name: Archives
       url: /archives/
       weight: 10
     - identifier: Categories
-      name: 类别
+      name: Categories
       url: /categories/
       weight: 10
     - identifier: Tags
-      name: 标签
+      name: Tags
       url: /tags/
       weight: 20
     - identifier: Search 
-      name: 搜索
+      name: Search
       url: /search/
       weight: 40
     - identifier: EmojiAll
