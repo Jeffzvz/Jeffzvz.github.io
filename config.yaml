@@ -152,8 +152,8 @@ outputs:
 
 gitalk:
   clientID : "Ov23lilSxXH8WWd3pYsx"
-  clientSecret : ""ac5927c649df55ee30e0b99437b8805f68a1f13a"
-  repo : "https://github.com/Jeffzvz/Jeffzvz.github.io/" # 您的博客的github地址Repository name，例如：xxxx.github.io
+  clientSecret : "ac5927c649df55ee30e0b99437b8805f68a1f13a"
+  repo : "Jeffzvz.github.io" # 您的博客的github地址Repository name，例如：xxxx.github.io
   owner : "Jeffzvz" # 您的GitHub ID
   admin: ["Jeffzvz"] # 您的GitHub ID
   id: location.pathname # 文章页面的链接地址就是ID
