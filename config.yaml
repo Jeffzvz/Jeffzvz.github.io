@@ -152,12 +152,12 @@ outputs:
 
 gitalk:
   clientID : "Ov23lilSxXH8WWd3pYsx"
-  clientSecret : ac5927c649df55ee30e0b99437b8805f68a1f13a
-  repo : "Jeffzvz.github.io" # 您的博客的github地址Repository name，例如：xxxx.github.io
+  clientSecret : ""ac5927c649df55ee30e0b99437b8805f68a1f13a"
+  repo : "https://github.com/Jeffzvz/Jeffzvz.github.io/" # 您的博客的github地址Repository name，例如：xxxx.github.io
   owner : "Jeffzvz" # 您的GitHub ID
   admin: ["Jeffzvz"] # 您的GitHub ID
   id: location.pathname # 文章页面的链接地址就是ID
-  labels: "gitalk" # Github issue labels. If you used to use Gitment, you can change it
+  labels: ["gitalk"] # Github issue labels. If you used to use Gitment, you can change it
   perPage: 5 # Pagination size, with maximum 100.
   pagerDirection: "last" # Comment sorting direction, available values are 'last' and 'first'.
   createIssueManually: true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
