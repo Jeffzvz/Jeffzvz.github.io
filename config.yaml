@@ -151,12 +151,11 @@ outputs:
       - JSON # is necessary
 
 gitalk:
-  clientID : Ov23lilSxXH8WWd3pYsx
-  #clientID : Jeffzvz
-  clientSecret : 90f10a28d46df3ea5b251c8423e655c26cebc066
+  clientID : "Ov23lilSxXH8WWd3pYsx"
+  clientSecret : ac5927c649df55ee30e0b99437b8805f68a1f13a
   repo : "Jeffzvz.github.io" # 您的博客的github地址Repository name，例如：xxxx.github.io
   owner : "Jeffzvz" # 您的GitHub ID
-  admin: "Jeffzvz" # 您的GitHub ID
+  admin: ["Jeffzvz"] # 您的GitHub ID
   id: location.pathname # 文章页面的链接地址就是ID
   labels: "gitalk" # Github issue labels. If you used to use Gitment, you can change it
   perPage: 5 # Pagination size, with maximum 100.
