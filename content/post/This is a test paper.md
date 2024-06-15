@@ -1,7 +1,7 @@
 ---
 title: "This is a test paper"    # 标题，去掉横短线病转换为标题格式
 date: 2024-06-15T19:38:57+08:00                                               # 发布日期
-tags: [""]                                                      # 分类和标记，用于过滤
+tags: ["Test"]                                                      # 分类和标记，用于过滤
 author: "Jeff"                                                  # 作者
 # author: ["Me", "You"] # multiple authors
 showToc: true                                                   # 显示目录
@@ -42,8 +42,6 @@ editPost:
 I will write draft notes in notion.
 
 Then i will integrate multi notes that I write and compress knowledge, and write a comprehensive note with marktext and send it to git pages. 
-
-{{< figure src="/This%20is%20a%20test%20paper$/微信图片_20240615194445.png" alt="SB" width="500"  >}}
 
 {{< figure src="/This%20is%20a%20test%20paper$/2024-06-15-19-32-56-1dc10f2b5c14221a55fab135af46c79.jpg" alt="Test Paper" width="300"  >}}
 
