@@ -145,7 +145,7 @@
     </style>
     {{- end }}
 </noscript>
-
+{{ if .Params.math }}{{ partial "katex.html" . }}{{ end }}
 {{- partial "extend_head.html" . -}}
 
 {{- /* Misc */}}
