@@ -1,7 +1,7 @@
 ---
 title: "DETR"    # 标题，去掉横短线病转换为标题格式
 date: 2024-07-29T00:31:35+08:00                                               # 发布日期
-tags: [""]                                                      # 分类和标记，用于过滤
+tags: ["DETR系列","Object Detection"]                                                      # 分类和标记，用于过滤
 author: "Jeff"                                                  # 作者
 # author: ["Me", "You"] # multiple authors
 showToc: true                                                   # 显示目录
@@ -34,6 +34,8 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
+[数学公式](https://www.yoghurtlee.com/hugo-math-rendering)
+
 # 1 总体（太长不看版）
 
     DETR的模型包括三部分：CNN backbone提取图像特征、transformer增强图像特征、FFN利用图像特征进行预测。DETR将目标检测视作是集合预测问题（set prediction problems)，摒弃了传统方法中手工设计部分（如区域提议网络RPN、非极大值抑制NMS等，idk啊我不懂啊~~）。
@@ -54,19 +56,29 @@ editPost:
 
 先梳理一下数据前提：
 
-$$
-\begin{aligned}
+$$ \begin{aligned}
 y_i &= \langle c, b_i \rangle \text{ 为真实边界框的类别和boxes}\\
 \hat{y_i} &= \langle \hat{c}, \hat{b_i} \rangle \text{ 为预测边界框的类别和boxes}\\
 b_i &= \langle x, y, h, w \rangle \in [0,1] \text{ 表示boxes的中心坐标和相较于原图尺寸的H、W比例, 均归一化}\\
 p &\text{ 为预测的类别经过softmax后得到的概率}
-\end{aligned}
-$$     
+\end{aligned} $$
 
 那么集合预测loss就为：
 
+$$ 
+\mathcal{L}_{\text{match}}(y, \hat{y}) = -\mathbb{1}_{\{c_i \neq \emptyset\}} \hat{p}_{\hat{\sigma}(i)}(c_i) + \mathbb{1}_{\{c_i \neq \emptyset\}} \mathcal{L}_{\text{box}}(b_i, \hat{b}_{\hat{\sigma}(i)})
 $$
-\mathcal{L}_{\text{match}}(y, \hat{y}) = -\mathbb{1}_{\{c_i\not = \emptyset \}}\hat{p}_{\hat{\sigma}(i)}(c_i) + \mathbb{1}_{\{c_i \neq \emptyset\}} \mathcal{L}_{\text{box}}(b_i, \hat{b}_{\hat{\sigma}(i)})
+
+新插入：
+$$
+\hat{fuck_{you}} = \frac{1}{2}
+$$
+
+$$
+\begin{Bmatrix}
+   a & b \\
+   c & d
+\end{Bmatrix}
 $$
 
 而我们的目标就是找到这样一个matcher $\hat{\sigma}$ 使得最后cost matrix矩阵里的集合预测Loss总和最小。
