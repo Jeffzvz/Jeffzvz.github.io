@@ -1,7 +1,7 @@
 ---
 title: "DETR"    # 标题，去掉横短线病转换为标题格式
 date: 2024-07-29T00:31:35+08:00                                               # 发布日期
-tags: ["DETR系列","Object Detection"]                                                      # 分类和标记，用于过滤
+Tags: ["Object Detection","DETR系列"]                                                     # 分类和标记，用于过滤
 author: "Jeff"                                                  # 作者
 # author: ["Me", "You"] # multiple authors
 showToc: true                                                   # 显示目录
