@@ -60,8 +60,8 @@ params:
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: "Welcome to Jeff'Log🦄"
-    subtitle: "This is subtitle"
+    title: "🦄My mental home"
+    subtitle: ""
     imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
@@ -74,8 +74,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Welcome to Jeff'Log🦄"
-    Content: I’m documenting my learning notes in this blog
+    Title: "🦄今天沉住气了吗账号名"
+    Content: Patient is key in life.
 
   socialIcons:
     - name: github

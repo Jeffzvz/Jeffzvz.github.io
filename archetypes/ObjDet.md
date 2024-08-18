@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .File.ContentBaseName  | title }}"    # 标题，去掉横短线病转换为标题格式
 date: {{ .Date }}                                               # 发布日期
-tags: [""]                                                      # 分类和标记，用于过滤
+Tags: ["Object Detection",]                                     # 分类和标记，用于过滤
 author: "Jeff"                                                  # 作者
 # author: ["Me", "You"] # multiple authors
 showToc: true                                                   # 显示目录
@@ -21,6 +21,7 @@ ShowPostNavLinks: true                                          # 显示文章�
 ShowWordCount: true                                             # 字数统计
 ShowRssButtonInSectionTermList: true                            # idk
 UseHugoToc: true                                                # 使用Hugo生成的目录
+math : true
 # cover:
 #     image: "<image path/url>" # image path/url
 #     alt: "<alt text>" # alt text
