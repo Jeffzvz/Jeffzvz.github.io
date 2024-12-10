@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .File.ContentBaseName  | title }}"    # 标题，去掉横短线病转换为标题格式
+title: "{{ .File.ContentBaseName | title }}"    # 标题，去掉横短线病转换为标题格式
 date: {{ .Date }}                                               # 发布日期
 tags: [""]                                                      # 分类和标记，用于过滤
 author: "Jeff"                                                  # 作者
